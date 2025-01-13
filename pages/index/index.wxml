@@ -1,0 +1,15 @@
+<view class="container">
+  <view wx:if="{{!userInfo}}" class="nologin">
+    <l-avatar size="200" icon-style="160" icon="user" bind:tap="onLogin"></l-avatar>
+    <l-button l-class="onlogin" bind:tap="onLogin">授权登录</l-button>
+  </view>
+  <view class="user-info" wx:if="{{userInfo}}">
+    <l-avatar class="l-avatar" placement="bottom" size="200" open-data="{{['userAvatarUrl','userNickName']}}"></l-avatar>
+    <view>
+      <l-button bind:tap="createRoom">邀请好友扫一扫参与计分</l-button>
+    </view>
+    <view class="yq">
+      <l-button plain="true" bind:tap="handleInvite">历史记录</l-button>
+    </view>
+  </view>
+</view>

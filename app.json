@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/room/room",
+    "pages/joinroom/joinroom",
+    "pages/record/record",
+    "pages/scoring/scoring"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "18雀神计分",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "l-avatar": "/miniprogram_npm/lin-ui/avatar/index",
+    "l-button": "/miniprogram_npm/lin-ui/button/index",
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index",
+    "l-popup": "/miniprogram_npm/lin-ui/popup/index",
+    "l-switch": "/miniprogram_npm/lin-ui/switch/index",
+    "l-radio-group": "/miniprogram_npm/lin-ui/radio-group/index",
+    "l-radio": "/miniprogram_npm/lin-ui/radio/index",
+    "l-input":"/miniprogram_npm/lin-ui/input/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents"
+}

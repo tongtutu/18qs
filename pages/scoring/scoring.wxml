@@ -1,0 +1,37 @@
+<!-- pages/scoring/scoring.wxml -->
+<view class="container">
+  <view class="title">第 {{circle + 1}} 局</view>
+  <view class="th">
+    <view class="th_1">名称</view>
+    <view class="th_2">胜负</view>
+    <view class="th_3">得分</view>
+  </view>
+  <block wx:for="{{users}}" wx:key="userid">
+    <view class="user-row">
+      <view class="user">
+        <view class="avatar-container">
+          <l-avatar shape="square" size="80" wx:if="{{item.avatarUrl}}" l-class="avatar" src="{{item.avatarUrl}}" />
+          <view class="avatar-s" wx:if="{{!item.avatarUrl}}" style="background-color: {{item.userbgcolor}};"><text>{{item.username[0]}}</text></view>
+        </view>
+        <view class="name">{{item.displayUsername || item.username}}</view>
+      </view>
+      <view class="radio-group">
+        <l-radio-group bind:linchange="onRadioChange" data-index="{{item.userid}}" placement="row" current="{{item.result}}">
+          <label>
+            <l-radio value="win" select-color="red" key="win">胜</l-radio>
+          </label>
+          <label>
+            <l-radio value="lose" select-color="green" l-class="lose-radio" key="lose">负</l-radio>
+          </label>
+        </l-radio-group>
+      </view>
+      <view class="score-input">
+        <l-input l-class="result-input" type="number" placeholder="" showRow="true" width="120" height="80" hide-label="true" bind:linblur="onScoreInput" bind:linfocus="onScoreFocus" data-index="{{item.userid}}" value="{{item.score}}" />
+      </view>
+    </view>
+  </block>
+  <view class="button-container">
+    <l-button bindtap="onSubmit" class="submit-button" width="250" bg-color="green">确定</l-button>
+    <l-button bindtap="onCancel" class="cancel-button" plain="true" width="250">取消</l-button>
+  </view>
+</view>

@@ -1,0 +1,159 @@
+/* pages/room/room.wxss */
+.room-container{
+  display: flex;
+  flex-direction: column;
+}
+.room-top{
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 20rpx; */
+  padding-top: 20rpx;
+  align-items: center;
+  background-color: #fff;
+}
+.room-part-font{
+  font-size: 36rpx;
+  height: 40rpx;
+  width: 120rpx;
+  margin-left: 32rpx;
+  line-height: 40rpx;
+}
+.room-tb{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 580rpx;
+}
+.room-tb text{
+  font-size:36rpx;
+  margin-right: 16rpx;
+  line-height: 40rpx;
+}
+.room-user-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* margin-left: 32rpx;
+  margin-top: 32rpx; */
+  padding-left: 32rpx;
+  padding-top: 32rpx;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: #fff;
+  padding-bottom: 24rpx;
+}
+.room-user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 16rpx;
+  margin-top:16rpx ;
+}
+.r-user-name{
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.r-user-name text{
+  line-height: 80rpx;
+  font-size: 48rpx;
+  font-weight: 1000;
+  color: #fff;
+}
+.username{
+  height: 32rpx;
+  font-size: 20rpx;
+}
+.avatar{
+  height: 80rpx;
+  width: 80rpx;
+}
+.t-points{
+  font-size: 24rpx;
+}
+.add-user-btn{
+  width: 80rpx !important;
+  height: 80rpx !important;
+}
+.qrcode{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  margin-top: 60rpx;
+}
+.qrcode image{
+  width: 500rpx;
+  height: 500rpx;
+}
+.modal{
+  background-color: #fff !important;
+  z-index: 999;
+}
+.modal-content{
+  background-color: #fff;
+  width: 620rpx;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10rpx;
+}
+.modal-content text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top:20rpx ;
+}
+.modal-cf{
+  display: flex;
+  flex-direction: row;
+  margin-top:20rpx; 
+}
+.cancel-btn{
+  border-top: 1rpx solid #ededed;
+  border-right: 1rpx solid #ededed;
+}
+.add-btn{
+  border-top: 1rpx solid #ededed;
+}
+.scoring-con{
+  width: 100%;
+  position: fixed;
+  bottom: 20rpx;
+  text-align: center;
+  height: 140rpx;
+  border-top:1rpx solid #ccc ;
+
+}
+.scoring{
+  margin-bottom: 10rpx !important;
+  background-color: rgb(57, 158, 47) !important;
+  width: 500rpx !important;
+  height: 120rpx !important;
+  margin-top: 20rpx !important;
+}
+.scoring1{
+  margin-bottom: 10rpx !important;
+  background-color: rgb(57, 158, 47) !important;
+  width: 250rpx !important;
+  height: 100rpx !important;
+  margin-top: 20rpx !important;
+}
+.closing{
+  margin-bottom: 10rpx !important;
+  background-color: rgb(57, 158, 47) !important;
+  width: 250rpx !important;
+  height: 100rpx !important;
+  margin-top: 20rpx !important;
+  margin-left:50rpx ;
+}

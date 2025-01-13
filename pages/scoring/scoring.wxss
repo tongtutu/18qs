@@ -1,0 +1,107 @@
+/* pages/scoring/scoring.wxss */
+/* pages/room/room.wxss */
+.th{
+  border-bottom: 1px solid #eaeaea;
+  width: 750rpx;
+  display: flex;
+}
+.th_1{
+  margin-left: 20rpx;
+  width: 280rpx;
+  text-align: center;
+}
+.th_2{
+  width: 210rpx;
+  text-align: center;
+}
+.th_3{
+  width: 200rpx;
+  text-align: center;
+}
+.container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.user-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px 0;
+  width: 750rpx;
+}
+
+.avatar-container {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 4px;
+}
+
+.avatar-s {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40rpx;
+  font-weight: bold;
+
+}
+
+.name {
+  font-size: 16px;
+  margin-right: 20px;
+  line-height: 80rpx;
+}
+
+.radio-group {
+  width: 210rpx;
+}
+
+.lose-radio {
+  margin-left: 20rpx;
+}
+
+.score-input {
+  flex: 1;
+  width: 200rpx;
+  text-align: center;
+  margin-left: 40rpx;
+}
+
+.result-input {
+  border-width: 1rpx;
+  border-style: solid;
+  border-color: #b6bbbb;
+  /*padding: 5px;*/
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submit-button,
+.cancel-button {
+  width: 48%;
+}
+.user{
+  display: flex;
+  width: 280rpx;
+  margin-left:20rpx ;
+}

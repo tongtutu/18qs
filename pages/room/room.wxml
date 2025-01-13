@@ -1,0 +1,52 @@
+<!-- room.wxml -->
+<view class="room-container">
+  <!-- 顶部房间用户列表 -->
+  <view class="room-top">
+    <text class="room-part-font">参与者</text>
+    <view class="room-tb">
+      <text class="room-tb-font">台板</text>
+      <l-switch bind:linchange="switchDefaultUser" checked="{{defaultUserSwitch}}" />
+  </view>
+  </view>
+  <view class="room-user-list">
+    <block wx:for="{{userList}}" wx:key="index">
+    <view class="room-user">
+      <image wx:if="{{item.avatarUrl}}" class="avatar" src="{{item.avatarUrl}}" />
+      <view wx:if="{{!item.avatarUrl}}" style="background-color: {{item.userbgcolor}};" class="r-user-name"><text>{{item.username[0]}}</text></view>
+      <text class="t-points">0</text>
+    </view>
+  </block>
+    <view class="room-user">
+      <l-icon name="add" color="#bbbccc" l-class="add-user-btn" size="80" bind:tap="showAddUserModal"/>
+      <text class="t-points"></text>
+    </view>
+  </view>
+
+  <!-- 添加用户按钮 -->
+  
+
+  <!-- 添加用户的模态框 -->
+  <l-popup l-class="modal" show="{{showAddUserModal}}" animation="show">
+    <view class="modal-content">
+      <text>添加牌友：</text>
+      <input class="input" bind:input="inputUserName" placeholder="请输入牌友名称" />
+      <view class="modal-cf">
+        <button class="cancel-btn" bind:tap="closeAddUserModal">取消</button>
+        <button class="add-btn" bind:tap="addUser">确认</button>
+      </view>
+    </view>
+  </l-popup>
+
+  <!-- 默认用户开关选项 -->
+  <!-- 中间加入房间二维码 -->
+  <view class="qrcode">
+    <image src="{{imageUrl}}"></image>
+  </view>
+  <view wx:if="{{!hascircle}}" class="scoring-con">
+    <l-button l-class="scoring" size="medium" bind:tap="scoring">开始计分</l-button>
+  </view>
+  <view wx:if="{{hasCircle}}" class="scoring-con">
+    <l-button l-class="scoring1" size="medium" bind:tap="scoring">开始计分</l-button>
+    <l-button l-class="closing" size="medium" bind:tap="closing">收盘</l-button>
+  </view>
+</view>

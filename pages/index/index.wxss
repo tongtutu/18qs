@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  margin-top: 100rpx;
+  height: 100vh;
+}
+.nologin{
+  display: flex;
+  flex-direction: column;
+}
+.default-image {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.l-avatar {
+  margin-top:rpx;
+}
+
+.username {
+  margin-top: 10px;
+}
+
+.login-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: rgb(167, 167, 167);
+  border-radius: 4px;
+}
+
+.invite-btn {
+  margin-top: 20px;
+  height: auto !important;
+  width: auto !important;
+  padding: 10px 20px;
+  background-color: #007AFF;
+  color: #fff;
+  border-radius: 4px;
+}
+.yq{
+  margin-top: 32rpx !important;
+  background-color: inherit;
+}
+.onlogin{
+  margin-top: 20rpx !important;
+}
